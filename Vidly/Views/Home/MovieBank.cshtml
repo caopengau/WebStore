@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "MovieBank";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information from db</p>
+
+<ul>
+    @foreach (var movie in @ViewBag.Movie)
+    {
+        <li>@movie.Name</li>
+    }
+</ul>

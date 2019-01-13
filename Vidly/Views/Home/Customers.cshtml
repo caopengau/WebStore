@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Customers";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<p>Use this area to provide additional information from db</p>
+
+<ul>
+    @foreach(var customer in @ViewBag.Customer)
+    {
+        <li>@customer.Name</li>
+    }
+</ul>
